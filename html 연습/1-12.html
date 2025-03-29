@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>form 태그</title>
+</head>
+<body>
+    <p>폼과 관련한 작업은 정보를 저장하거나 검색, 수정하는 것이 대두분인데 모두 DB를 기반으로 작동한다.</p>
+    <h1>폼을 만드는 form 태그</h1>
+    <!-- <form [속성="속성값"]>여러 폼 요소</form> -->
+    <table>
+        <caption>form 태그의 속성</caption>
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <th>method</th>
+            <td>사용자가 입력한 내용을 서버 쪽 프로그램으로 어떻게 넘겨줄지 지정<br>
+            사용할 수 있는 속성값은 get과 post이다.<br>
+            get : 주소 표시중에 사용자가 입력한 내용이 드러남<br>
+            post : 입력한 내용의 길이에 제한받지 않고 사용자 내용도 드러나지 않음</td>
+        </tr>
+        <tr>
+            <th>name</th>
+            <td>폼의 이름을 지정한다.</td>
+        </tr>
+        <tr>
+            <th>action</th>
+            <td>내용을 처리해 줄 서버 프로그램을 지정한다.</td>
+        </tr>
+        <tr>
+            <th>target</th>
+            <td>action속성에서 지정한 파일을 다른 위치에서 열도록 한다.</td>
+        </tr>
+    </table>
+    <p>자동완성 기능을 나타내는 autocomplete</p>
+    끄고 싶을 땐 autocomplete="off" 하면 된다.
+    <br>
+    <h2>폼 요소를 그룹으로 묶는 fieldset, legend</h2>
+    <!-- <fieldset [속성="속성값"]></fieldset> -->
+    <fieldset>
+        <legend>그룹이름</legend>
+    </fieldset>
+    <p>위와 같이 개인정보와 다른 정보를 나눌 때 등 사용한다.</p>
+    <br>
+    <h2>폼 요소에 레이블을 붙이는 label 태그</h2>
+    <p>label이란 입력란 가까이에 아이디나 비밀번호처럼 붙여 놓은 텍스트를 말한다.</p>
+    <!-- <label for="id명">레이블명<input id="id명"></label> -->
+    <p>label과 input 요소를 따로 사용할 경우 id를 정확하게 맞춰줘야한다.</p>
+    <br>
+    <h2>input 태그의 type 속성 한눈에 살펴보기</h2>
+    <h3>텍스트와 비밀번호</h3>
+    <p>type="text" / type="password"</p>
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+    <table>
+        <caption>text와 password에서 사용하는 속성</caption>
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <th>size</th>
+            <td>텍스트와 비밀번호 필드의 길이를 지정<br>
+                화면에 몇 글자가 보이도록 할 것인지를 지정한다.
+            </td>
+        </tr>
+        <tr>
+            <th>value</th>
+            <td>텍스트 필드 요소가 화면에 표시될 때 텍스트 필드 부분에 보여 주는 내용</td>
+        </tr>
+        <tr>
+            <th>maxlength</th>
+            <td>텍스트 필드와 비밀번호 필드에 입력할 수 있는 최대 문자수를 지정한다.</td>
+        </tr>
+    </table>
+    <h3>search, url, email, tel</h3>
+    <p>type="search"를 사용하면 웹 브라우저에서는 검색을 위한 텍스트 필드로 인식한다.</p>
+    <p>type="url" 웹 주소를 입력하는 필드</p>
+    <p>type="email" 이메일 주소를 입력하는 필드</p>
+    <p>type="tel" 전화번호를 나타내는 필드</p>
+    <p>세분화된 필드는 pc에선 별 차이가 없어 보이지만 모바일 기기에서 확인하면 키보드 배열이 바뀐다.</p>
+    <form>
+        <ul>
+            <li>
+                <label for="us">이름</label>
+                <input type="text" id="us">
+            </li>
+            <li>
+                <label for="addr">인터넷 주소</label>
+                <input type="url" id="addr">
+            </li>
+            <li>
+                <label for="mail">이메일 주소</label>
+                <input type="email" id="mail">
+            </li>
+            <li>
+                <label for="p">연락처</label>
+                <input type="tel" id="p">
+            </li>
+        </ul>
+    </form>
+
+    <h3>checkbox, radio</h3>
+    <p>여러 항목 중에서 원하는 항목을 선택할 때 사용하는 폼 요소</p>
+    <p>1개만 선택하려면 라디오버튼</p>
+    <p>2개 이상 선택하려면 체크박스 사용</p>
+    <table>
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <th>value</th>
+            <td>숫자나 영어로 서버에게 넘겨줄 값을 지정함</td>
+        </tr>
+        <tr>
+            <th>checked</th>
+            <td>여러 항목 중에서 기본으로 선택해 놓고 싶은 항목에 사용</td>
+        </tr>
+    </table>
+    <h3>number, range</h3>
+    <p>type="number"를 사용하면 스핀박스가 나타나면서 숫자를 선택할 수 있다.</p>
+    <p>type="range"는 슬라이드 막대를 움직여 숫자를 입력할 수 있다.</p>
+    <br>
+    <table>
+        <caption>숫자 입력 필드에서 사용하는 속성</caption>
+        <tr>
+            <th>속성</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <th>min</th>
+            <td>필드에 입력할 수 있는 최솟값 지정</td>
+        </tr>
+        <tr>
+            <th>max</th>
+            <td>필드에 입력할 수 있는 최댓값 지정</td>
+        </tr>
+        <tr>
+            <th>step</th>
+            <td>숫자 간격을 지정할 수 있다. 기본값은 1</td>
+        </tr>
+        <tr>
+            <th>value</th>
+            <td>필드에 표시할 초기값값</td>
+        </tr>
+    </table>
+    <form>
+        <input type="number">
+        <input type="range" min="1" max="10">
+    </form>
+    <h3>date, month, week</h3>
+    <p>date는 연도,월,일 표시</p>
+    <p>month는 연도, 월 표시</p>
+    <p>week는 주를 선택해서 입력</p>
+    <form>
+        <input type="date">
+        <input type="month">
+        <input type="week">
+    </form>
+    <h3>time, datetime, datetime-local</h3>
+    <p>시간을 지정할 땐 time사용</p>
+    <p>날짜와 시간을 같이 지정할 땐 datetime, datetime-local 사용</p>
+    <form>
+        <input type="time">
+        <!-- <input type="datetime"> -->
+        <input type="datetime-local">
+    </form>
+    <h3>submit, reset</h3>
+    <p>전송 버튼 submit<br>
+    submit을 누르면 form태그의 action 속성에 지정한 곳으로 넘겨진다.</p>
+    <p>삭제 버튼 reset</p>
+    <h3>image</h3>
+    <p>submit과 같은 기능을 하며 이미지 버튼을 나타낸다.</p>
+    <h3>button</h3>
+    <p>기본 버튼을 나타내며 따로 기능은 없어서 자바스크립트를 활용해 넣어야한다.</p>
+    <h3>file</h3>
+    <p>화면에 [파일선택] 이나 [찾아보기] 버튼 등이 표시된다.</p>
+    <h3>hidden</h3>
+    <p>화면에선 보이지 않지만 사용자가 입력을 마치면 폼과 함께 서버로 보내야 하는 요소들</p>
+    <p>사용자의 아이디정보 등이 넘어갈 때 사용한다.</p>
+</body>
+</html>
