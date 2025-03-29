@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>목록 만들기</title>
+</head>
+<body>
+    <!-- CSS와 함께 사용해서 네비게이션이나 콘텐츠를 배치하는 등 다양한 용도로 사용됨 -->
+    <!-- 순서의 목록을 만드는건 ol 태그, 순서없는 목록을 만드는건 ul태그 -->
+    <h2>순서 있는 목록 ul,li</h2>
+    <ol>
+        <li>항목1</li>
+        <li>항목2</li>
+    </ol>
+    <p>ol태그에 타입 속성을 사용하면 영문자나 로마숫자도 나타낼 수 있다.</p>
+    <ol type="I">
+        <li>type = "1" / 숫자(기본값)</li>
+        <li>type = "a" / 영문 소문자</li>
+        <li>type = "A" / 영문 대문자</li>
+        <li>type = "i" / 로마 숫자 소문자</li>
+        <li>type = "I" / 로마 숫자 대문자</li>
+    </ol>
+    <p>start속성을 사용하면 첫번째가 아닌 속성에 적은 숫자부터 시작</p>
+    <br>
+    <h2>순서 없는 목록 ul,li</h2>
+    <!-- 항목의 순서가 중요하지 않을 때 사용한다. -->
+    <ul>
+        <li>항목1</li>
+        <li>항목2</li>
+    </ul>
+    <!-- 목록 앞에 작은 원이나 사각형을 붙혀 구분하는데 이것들을 불릿(bullet)이라고 한다. -->
+    <br>
+    <h2>설명 목록을 만드는 dl,dt,dd 태그</h2>
+    <dl>
+        <dt>이름</dt>
+        <dd>값</dd>
+        <!-- dt 하나에 dd 여러개를 사용할 수 있다.  -->
+    </dl>
+</body>
+</html>
