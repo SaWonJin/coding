@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>이미지,오디오,비디오 삽입</title>
+</head>
+<body>
+    <h2>이미지를 삽입하는 태그 img</h2>
+    <img src="..\노을.jpg" alt="노을 사진" width="30%" height="100%">
+    <p>src 속성은 이미지 파일의 경로를 지정</p>
+    <p>alt 속성은 화면 낭독기 등 에서 이미지를 대신해서 읽어 줄 텍스트를 입력</p>
+    <p>.. 은 바로 위 파일로 올라가는 표시이다.</p>
+    <!-- alt속성을 지정하면 인터넷이 불안정하거나 이미지 파일 경로를 잘못 넣어 이미지가 제대로 출력이 안될때 
+    이미지 대신 텍스트가 나타나게 된다. -->
+    <br>
+    <h4>이미지 크기를 조정하는 속성은 width 와 height이다. </h4>
+    <p>width는 이미지의 너비, height는 이미지의 높이를 지정한다. </p>
+
+    <h2>오디오와 비디오 삽입</h2>
+    <h3>다양한 멀티미디어 파일을 삽일할 때 쓰는 object, embed 태그</h3>
+    object태그는 오디오 파일 뿐만 아니라 비디오, PDF등 다양한 멀티미디어 파일을 삽입할 때 사용
+    <!-- <object width="너비" height="높이" data="파일" type="사용된 미디어 타입 (mp4 등)"></object> -->
+    <object width="" height="" data="" type=""></object>
+
+    <br>
+    embeb 태그는 오디오, 비디오, 이미지 등 다양한 멀티미디어 파일을 삽입할 수 있다. 
+    <br>
+    다른 audio video 등 태그 지원이 안될 때 사용할 수 있다. 
+    <h3>오디오와 비디오 태그</h3>
+    <p>HTML에서 배경음악이나 효과음 등 오디오 파일을 삽일할 땐 audio 태그</p>
+    <p>비디오 파일을 삽입 할 땐 video 태그를 사용한다.</p>
+    <!-- <audio src="오디오 파일 경로"></audio> -->
+    <!-- <video src="비디오 파일 경로"></video> -->
+    <table>
+        <caption>audio 와 video 태그의 속성</caption>
+        <tr>
+            <th>controls</th>
+            <td>플레이어 화면에 컨트롤 바를 표시</td>
+        </tr>
+        <tr>
+            <th>autoplay</th>
+            <td>오디오나 비디오를 자동으로 실행</td>
+        </tr>
+        <tr>
+            <th>loop</th>
+            <td>오디오나 비디오를 반복재생</td>
+        </tr>
+        <tr>
+            <th>muted</th>
+            <td>오디오나 비디오의 소리를 제거</td>
+        </tr>
+        <tr>
+            <th>preload</th>
+            <td>오디오나 비디오파일을 어떻게 로딩할 것인지 지정함</td>
+        </tr>
+        <tr>
+            <th>width, height</th>
+            <td>비디오 플레이어의 너비와 높이를 지정함</td>
+        </tr>
+        <tr>
+            <th>poster="파일이름"</th>
+            <td>video 태그에서 비디오가 재생되기 전가지 표시될 포스트 이미지 지정</td>
+        </tr>
+    </table>
+</body>
+</html> 
